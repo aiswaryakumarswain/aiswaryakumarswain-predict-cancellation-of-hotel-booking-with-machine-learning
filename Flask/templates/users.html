@@ -1,0 +1,41 @@
+<table border=2 bgcolor="lightblue" >
+    <tr>
+        <td>HOTEL</td>
+        <td>LOCATION</td>
+        <td>LEAD_TIME</td>
+        <td>MARKET SEGMENT</td>
+        <td>depositType</td>
+        <td>parkingspace</td>
+        <td>special_req</td>
+        <td>prev_cancel</td>
+        <td>repeat_guest</td>
+        <td>booking_change</td>
+        <td>customertype</td>
+        <td>tot_stays</td>
+        <td>tot_guest</td>
+        <td>cancel_chance</td>
+        <td>prediction</td>
+        
+    </tr>
+    {% for user in userDetails %}
+    <tr>
+        <td>{{user[0]}}</td>
+        <td>{{user[1]}}</td> 
+        <td>{{user[2]}}</td>
+         <td>{{user[3]}}</td> 
+         <td>{{user[4]}}</td> 
+         <td>{{user[5]}}</td>
+        <td>{{user[6]}}</td>
+        <td>{{user[7]}}</td>
+         <td>{{user[8]}}</td>
+        <td>{{user[9]}}</td>
+        <td>{{user[10]}}</td>
+        <td>{{user[11]}}</td>
+        <td>{{user[12]}}</td>
+        <td>{{user[13]}}</td>
+        <td>{{user[14]}}</td>
+    </tr>
+
+
+    {% endfor %}
+</table>
